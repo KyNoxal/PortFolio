@@ -2,7 +2,6 @@ import { YellowButton } from "@/components/yellow-button";
 
 export default function Home() {
   return <div className="flex flex-col items-center justify-center min-h-screen bg-grayblue text-white">
-
       <div className="mb-6">
         <img src="/pp.png" alt="Photo de profil" className="w-40 h-40 rounded-full shadow-lg" />
       </div>
@@ -11,9 +10,9 @@ export default function Home() {
       <p className="text-lg text-gray-400 font-actor">Étudiant en informatique</p>
 
       <YellowButton
-        text="Accueil"
-        className="mt-4"
+        text="Découvrir mon PortFolio"
         href="/accueil"
+        className="rounded-full mt-8 px-6 py-2"
       />
 
     </div>

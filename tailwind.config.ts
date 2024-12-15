@@ -17,7 +17,9 @@ export default {
         yellow: "#FAD840",
         white: "#FFFFFF",
         wheat: "#D9D9D9",
-        blue: "#07399D"
+        blue: "#07399D",
+        graybutton: "#C1CFDA",
+        graybuttonhover: "#939EA6"
       },
       fontFamily: {
         actor: ['Actor', 'system-ui'],
