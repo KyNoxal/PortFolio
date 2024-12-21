@@ -14,7 +14,6 @@ export default function Accueil() {
                     à l'IUT de Dijon -Auxerre - Nevers. Le domaine de l'informatique est 
                     pour moi une passion. C’est pour cela que j’ai choisi de
                      faire des études dans le domaine de l’informatique.</p>}
-                href="/a-propos"
             />
             <Card
                 title="Mes loisirs et centre d’intérêts :"
