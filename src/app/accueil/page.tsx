@@ -10,6 +10,7 @@ export default function Accueil() {
 				nodes={<p>Étudiant en alternance - 3ème année de BUT informatique - Réalisation,
 					Conception, Développement, Validation d'Application à l'IUT de
 					Dijon/Auxerre/Nevers.</p>}
+				href="/a-propos"
 			/>
 			<Card
 				title="Mes diplômes :"
