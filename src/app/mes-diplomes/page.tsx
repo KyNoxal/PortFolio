@@ -4,7 +4,7 @@ import BackButton from "@/components/return-button";
 
 export default function Accueil() {
     return (
-        <main className="bg-wheat w-full justify-center min-h-screen">
+        <main className="mb-4 bg-wheat w-full justify-center min-h-screen">
             <Header />
             <BackButton />
             <Card
