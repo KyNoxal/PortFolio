@@ -50,6 +50,7 @@ export default function Accueil() {
 						<li>Création d’une IA capable de jouer aux dames et aux morpions</li>
 						<li>Développement d’un jeu de puzzle en JavaScript            </li>
 					</ul>}
+				href="mes-projets"
 			/>
 		</main>
 	);
