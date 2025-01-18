@@ -34,6 +34,7 @@ export default function Accueil() {
                         </div>
                     </div>
                 }
+                href="/mes-projets/recherche-futee"
             />
             
             <Card
