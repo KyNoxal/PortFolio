@@ -20,6 +20,7 @@ export default function Accueil() {
                         </div>
                     </div>
                 }
+                href="/mes-projets/nect-enigma"
             />
             <Card
                 title="Recherche Futée"
