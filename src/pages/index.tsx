@@ -1,4 +1,7 @@
-import { YellowButton } from "@/components/yellow-button";
+import Image from "next/image";
+import { Geist, Geist_Mono } from "next/font/google";
+import { YellowButton } from "./yellow-button";
+
 
 export default function Home() {
   return <div className="flex flex-col items-center justify-center min-h-screen bg-grayblue text-white">
@@ -16,5 +19,4 @@ export default function Home() {
       />
 
     </div>
-  ;
 }

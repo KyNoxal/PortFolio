@@ -1,5 +1,6 @@
-import Card from "@/components/card";
-import Header from "@/components/header";
+import Card from "./card";
+import Header from "./header";
+
 
 export default function Accueil() {
 	return (
@@ -26,8 +27,8 @@ export default function Accueil() {
 				title="Mon parcours professionnel :"
 				nodes={
 					<ul className="list-disc ml-4">
-						<li>Emploi dans la chaîne de magasin Leclerc en rayons frais</li>
-						<li>Emploi dans une coopérative agricole pendant deux mois en tant qu&apos;ouvrier sur machine</li>
+						<li>Alternance à Gustave Roussy (Villejuif - Île de France)</li>
+						<li>Stage en développement logiciel à Apyclic (Nevers - Nièvre)</li>
 					</ul>
 				}
 				href="/mon-parcours"

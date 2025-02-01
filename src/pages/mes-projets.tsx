@@ -1,9 +1,9 @@
-import Card from "@/components/card";
-import Header from "@/components/header";
-import BackButton from "@/components/return-button";
+import Card from "./card";
+import Header from "./header";
+import BackButton from "./back-button";
 import Image from "next/image";
 
-export default function Accueil() {
+export default function MesProjets() {
     return (
         <main className="mb-4 bg-wheat w-full justify-center min-h-screen">
             <Header />
@@ -21,6 +21,7 @@ export default function Accueil() {
                     </div>
                 }
                 href="/mes-projets/nect-enigma"
+                // href="/nect-enigma"
             />
             <Card
                 title="Recherche Futée"
@@ -35,6 +36,7 @@ export default function Accueil() {
                     </div>
                 }
                 href="/mes-projets/recherche-futee"
+                // href="/recherche-futee"
             />
             
             <Card

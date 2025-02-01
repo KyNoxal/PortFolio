@@ -25,13 +25,13 @@ body {
     font-family: 'Actor';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/Actor-Regular.ttf') format('truetype');
+    src: url('../fonts/Actor-Regular.ttf') format('truetype');
   }
   
   @font-face {
     font-family: 'Jaro';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/Jaro-Regular.ttf') format('truetype');
+    src: url('../fonts/Jaro-Regular.ttf') format('truetype');
   }
 }

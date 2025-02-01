@@ -1,6 +1,6 @@
-import Card from "@/components/card";
-import Header from "@/components/header";
-import BackButton from "@/components/return-button";
+import Card from "../card";
+import Header from "../header";
+import BackButton from "../back-button";
 import Image from "next/image";
 
 export default function Accueil() {

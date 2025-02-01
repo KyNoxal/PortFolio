@@ -1,8 +1,8 @@
-import Card from "@/components/card";
-import Header from "@/components/header";
-import BackButton from "@/components/return-button";
+import Card from "./card";
+import Header from "./header";
+import BackButton from "./back-button";
 
-export default function Accueil() {
+export default function APropos() {
     return (
         <main className="mb-4 bg-wheat w-full justify-center min-h-screen">
             <Header />
