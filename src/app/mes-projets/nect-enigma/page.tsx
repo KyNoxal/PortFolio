@@ -12,11 +12,11 @@ export default function Accueil() {
                 title="Présentation"
                 nodes={
                     <div>
-                        <p>Next’s Enigma est un jeu de puzzle intégralement jouable sur un navigateur web.
-                        Il s’inspire de l’univers de science-fiction des jeux vidéos “Portal” et “Portal 2” développés par Valve.</p>
+                        <p>Next&apos;s Enigma est un jeu de puzzle intégralement jouable sur un navigateur web.
+                        Il s&apos;inspire de l’univers de science-fiction des jeux vidéos “Portal” et “Portal 2” développés par Valve.</p>
                         <br></br>
-                        <p>Dans Next’s Enigma, vous devez résoudre des puzzles pour rejoindre la sortie de la salle et progresser dans le jeu.
-                        Des niveaux de tutoriels avec une difficulté progressives sont proposés. Cependant, l’utilisateur peut importer son propre niveau depuis son appareil</p>
+                        <p>Dans Next&apos;s Enigma, vous devez résoudre des puzzles pour rejoindre la sortie de la salle et progresser dans le jeu.
+                        Des niveaux de tutoriels avec une difficulté progressives sont proposés. Cependant, l&apos;utilisateur peut importer son propre niveau depuis son appareil</p>
                     </div>
                 }
             />
@@ -39,13 +39,13 @@ export default function Accueil() {
                             <li>
                                 JavaScript
                                 <ul className="list-disc ml-4">
-                                    <li>Moteur du jeu et éléments intéractifs</li>
+                                    <li>Moteur du jeu et éléments interactifs</li>
                                 </ul>
                             </li>
                             <li>
                                 HTML et CSS
                                 <ul className="list-disc ml-4">
-                                    <li>Page d’affichage et page principale du jeu</li>
+                                    <li>Page d&apos;affichage et page principale du jeu</li>
                                 </ul>
                             </li>
                             <li>
@@ -62,9 +62,9 @@ export default function Accueil() {
                 title="Notions utilisées"
                 nodes={
                     <div>
-                        <p>Ce projet a été mené en équipe de 4 personnes dans le cadre de la deuxième année de mon BUT Informatique</p>
+                        <p>Ce projet a été mené en équipe de quatre personnes dans le cadre de la deuxième année de mon BUT Informatique</p>
                         <br></br>
-                        <p>Il a donc pour but de valider le deuxième semestre de l’année du BUT Informatique en vérifiant la bonne application des notions si-dessous :</p>
+                        <p>Il a donc pour but de valider le deuxième semestre de l&apos;année du BUT Informatique en vérifiant la bonne application des notions si-dessous :</p>
                         <ul className="list-disc ml-4">
                             <li>Conduite de projet</li>
                             <li>Travaille en équipe</li>

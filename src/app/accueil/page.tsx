@@ -8,7 +8,7 @@ export default function Accueil() {
 			<Card
 				title="À propos de moi :"
 				nodes={<p>Étudiant en alternance - 3ème année de BUT informatique - Réalisation,
-					Conception, Développement, Validation d'Application à l'IUT de
+					Conception, Développement, Validation d&apos;Application à l&apos;IUT de
 					Dijon/Auxerre/Nevers.</p>}
 				href="/a-propos"
 			/>
@@ -16,7 +16,7 @@ export default function Accueil() {
 				title="Mes diplômes :"
 				nodes={
 					<ul className="list-disc ml-4">
-						<li>DUT Informatique à l’IUT de Dijon - Auxerre - Nevers</li>
+						<li>DUT Informatique à l&apos;IUT de Dijon - Auxerre - Nevers</li>
 						<li>BAC STI2D Mention Assez bien au Lycée Général et technologique Geoffroy Saint Hilaire</li>
 					</ul>
 				}
@@ -27,7 +27,7 @@ export default function Accueil() {
 				nodes={
 					<ul className="list-disc ml-4">
 						<li>Emploi dans la chaîne de magasin Leclerc en rayons frais</li>
-						<li>Emploi dans une coopérative agricole pendant deux mois en tant qu’ouvrier sur machine</li>
+						<li>Emploi dans une coopérative agricole pendant deux mois en tant qu&apos;ouvrier sur machine</li>
 					</ul>
 				}
 				href="/mon-parcours"
@@ -46,9 +46,9 @@ export default function Accueil() {
 				title="Mes projets et réalisations :"
 				nodes={
 					<ul className="list-disc ml-4">
-						<li>Création d’un logiciel Windows de gestion de composants électroniques</li>
-						<li>Création d’une IA capable de jouer aux dames et aux morpions</li>
-						<li>Développement d’un jeu de puzzle en JavaScript            </li>
+						<li>Création d&apos;un logiciel Windows de gestion de composants électroniques</li>
+						<li>Création d&apos;une IA capable de jouer aux dames et aux morpions</li>
+						<li>Développement d&apos;un jeu de puzzle en JavaScript</li>
 					</ul>}
 				href="mes-projets"
 			/>

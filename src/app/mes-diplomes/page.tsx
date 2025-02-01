@@ -14,10 +14,10 @@ export default function Accueil() {
                     <ul className="list-disc ml-4">
                         <li>Parcours A
                             <ul className="list-disc ml-4">
-                                <li>Réalisation, Conception, Développement et Validation d'application</li>
+                                <li>Réalisation, Conception, Développement et Validation d&apos;application</li>
                             </ul>
                         </li>
-                        <li>A l'IUT de Dijon - Auxerre - Nevers.</li>
+                        <li>A l&apos;IUT de Dijon - Auxerre - Nevers.</li>
                     </ul>
                 }
             />
@@ -26,7 +26,7 @@ export default function Accueil() {
                 title="Baccalauréat STI2D"
                 nodes={
                     <ul className="list-disc ml-4">
-                        <li>Sciences et Technologies de l'Industrie et du développement durable</li>
+                        <li>Sciences et Technologies de l&apos;Industrie et du développement durable</li>
                         <li>Option ITEC (Mécanique)</li>
                         <li>Mention Bien</li>
                         <li>Option développement informatique en 1ère</li>

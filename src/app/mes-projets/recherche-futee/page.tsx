@@ -14,11 +14,11 @@ export default function RechercheFutee() {
                     <div>
                         <p>Recherche Futée est une application web développée en PHP sans framework.</p>
                         <br></br>
-                        <p>Il provient d’une observation du comité de direction de ma formation (BUT Informatique) lorsqu’il s’agit de l’organisation des étudiants dans leurs recherches de stages et d’alternance.</p>
+                        <p>Il provient d&apos;une observation du comité de direction de ma formation (BUT Informatique) lorsqu&apos;il s&apos;agit de l’organisation des étudiants dans leurs recherches de stages et d’alternance.</p>
                         <br></br>
-                        <p>Recherche Futé propose une organisation basée sur les candidatures de l’utilisateur. Il permet d’enregistrer toutes les informations relatives aux offres et, par la suite, permet également de trier ses candidatures.</p>
+                        <p>Recherche Futé propose une organisation basée sur les candidatures de l&apos;utilisateur. Il permet d&apos;enregistrer toutes les informations relatives aux offres et, par la suite, permet également de trier ses candidatures.</p>
                         <br></br>
-                        <p>Enfin, recherche futée propose à l’utilisateur des statistiques basée sur ses candidatures, comme le nombre de candidatures refusées, en attente, etc.</p>
+                        <p>Enfin, recherche futée propose à l&apos;utilisateur des statistiques basée sur ses candidatures, comme le nombre de candidatures refusées, en attente, etc.</p>
                     </div>
                 }
             />
@@ -45,7 +45,7 @@ export default function RechercheFutee() {
                             <li>
                                 HTML et Tailwind CSS
                                 <ul className="list-disc ml-4">
-                                    <li>Style et structures des pages web de l’application</li>
+                                    <li>Style et structures des pages web de l&apos;application</li>
                                 </ul>
                             </li>
                             <li>
@@ -64,7 +64,7 @@ export default function RechercheFutee() {
                     <div>
                         <p>Ce projet a été mené en équipe de 5 personnes dans le cadre de la fin de deuxième année de mon BUT Informatique</p>
                         <br></br>
-                        <p>Il a donc pour but de valider le troisième semestre de l’année du BUT Informatique en vérifiant la bonne application des notions si-dessous :</p>
+                        <p>Il a donc pour but de valider le troisième semestre de l&apos;année du BUT Informatique en vérifiant la bonne application des notions si-dessous :</p>
                         <ul className="list-disc ml-4">
                             <li>Conduite de projet</li>
                             <li>Travaille en équipe</li>
@@ -74,7 +74,7 @@ export default function RechercheFutee() {
                                 Mise en pratique des bonnes conduites du web
                                 <ul className="list-disc ml-4">
                                     <li>Sécurités (Hachage des mots de passe et critères)</li>
-                                    <li>Design et conception (style ergonomique et adapté aux différents appareils et taille d'écran)</li>
+                                    <li>Design et conception (style ergonomique et adapté aux différents appareils et taille d&apos;écran)</li>
                                     <li>Optimisation des performances</li>
                                 </ul>
                             </li>

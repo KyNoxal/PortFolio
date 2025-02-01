@@ -12,7 +12,7 @@ export default function Accueil() {
                 title="Alternance à Gustave Roussy (Villejuif)"
                 nodes={
                     <ul className="list-disc ml-4">
-                        <li>Gestion de projet du système d’information décisionnel (SID)
+                        <li>Gestion de projet du système d&apos;information décisionnel (SID)
                             <ul className="list-disc ml-4">
                                 <li>Analyse des besoins</li>
                                 <li>Rédaction des spécifications techniques</li>
@@ -21,6 +21,7 @@ export default function Accueil() {
                                 <li>Réalisation de rapports structurés et de tableaux de bord.</li>
                             </ul>
                         </li>
+                        <li>Intégrations de données de génétique et universitaire dans le SID</li>
                         <li>Maintien en condition opérationnel du SID</li>
                     </ul>
                 }
@@ -37,7 +38,7 @@ export default function Accueil() {
                                 <li>Ces logiciels comprennent :
                                     <ul className="list-disc ml-4">
                                         <li>Une interface utilisateur</li>
-                                        <li>Une base de données déployé sur le réseau de l’entreprise</li>
+                                        <li>Une base de données déployée sur le réseau de l&apos;entreprise</li>
                                     </ul>
                                 </li>
                                 <li>Langages utilisés :
@@ -60,7 +61,7 @@ export default function Accueil() {
                         <li>Employé commerciale dans une chaîne de magasin agroalimentaire (Leclerc)
                             <ul className="list-disc ml-4">
                                 <li>Remplacement de personnels</li>
-                                <li>Maintiens Depuis rayons frais</li>
+                                <li>Maintiens du rayons frais</li>
                             </ul>
                         </li>
                     </ul>
