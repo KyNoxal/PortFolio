@@ -59,7 +59,7 @@ export default function MonParcours() {
             />
             <Card
                 upperText="De Juillet 2024 à Août 2024, de juillet 2023 à Août 2023, de juillet 2022 à Août 2022"
-                title="Jobs d'été"
+                title="Jobs d&apos;été"
                 nodes={
                     <ul className="list-disc ml-4">
                         <li>Employé commerciale dans une chaîne de magasin agroalimentaire (Leclerc)
@@ -73,7 +73,7 @@ export default function MonParcours() {
             />
             <Card
                 upperText="De Juillet 2018 à Août 2018"
-                title="Job d'été"
+                title="Job d&apos;été"
                 nodes={
                     <ul className="list-disc ml-4">
                         <li>Ouvrier sur machine dans une coopérative agricole local.

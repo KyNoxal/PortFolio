@@ -1,9 +1,8 @@
 import Card from "../card";
 import Header from "../header";
 import BackButton from "../back-button";
-import Image from "next/image";
 
-export default function RechercheFutee() {
+export default function Merchventory() {
     return (
         <main className="mb-4 bg-wheat w-full justify-center min-h-screen">
             <Header />
@@ -13,12 +12,25 @@ export default function RechercheFutee() {
                 nodes={
                     <div>
                         <p>
-                            Recherche Futée est une application web développée en PHP sans framework.
-                            Il provient d&apos;une observation du comité de direction de ma formation (BUT Informatique) lorsqu&apos;il s&apos;agit de l’organisation des étudiants dans leurs recherches de stages et d’alternance.
+                            MerchVentory est une application destinée à la gestion des stocks et 
+                            système de réservation et pré-commandes pour les groupes de musiques.
                             <br/><br/>
-                            Recherche Futé propose une organisation basée sur les candidatures de l&apos;utilisateur. Il permet d&apos;enregistrer toutes les informations relatives aux offres et, par la suite, permet également de trier ses candidatures.
+                            Réalisé en php avec Symfony et SQL pour la base de données, 
+                            l&apos;application permet aux groupes de musique de mettre en vente leurs 
+                            produits dérivés sur l&apos;application et gérer leurs stocks directement 
+                            depuis l&apos;application.
                             <br/><br/>
-                            Enfin, recherche futée propose à l&apos;utilisateur des statistiques basée sur ses candidatures, comme le nombre de candidatures refusées, en attente, etc.
+                            Les clients peuvent se rendre sur le site et précommander depuis 
+                            l&apos;application. Une fois la pré-commande réalisé, le client obtient 
+                            un QR Code qu&apos;il montre au gestionnaire du groupe pour terminer la 
+                            commande.
+                            <br/><br/>
+                            MerchVentory permet également de consulter les prochaines dates
+                            de concerts des groupes via une carte montrant l&apos;endroit, 
+                            la date de spectacle ainsi que les groupes qui y participent.
+                            <br/><br/>
+                            Pour controller tout ceci, un système de compte avec des rôles 
+                            est présent pour assurer une administration dans l&apos;entièreté du site.
                         </p>
                     </div>
                 }
@@ -27,8 +39,8 @@ export default function RechercheFutee() {
                 title="Visuels"
                 nodes={
                     <div className="flex flex-col justify-center my-5 space-y-5">
-                        <Image src={"./Recherche Futée page principale.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg"/>
-                        <Image src={"./Recherche Futée page demandes.png"} height={800} width={800} alt="Recherche Futée page demandes" className="rounded-lg"/>   
+                        {/* <Image src={"/Recherche Futée page principale.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg" /> */}
+                        {/* <Image src={"/Recherche Futée page demandes.png"} height={800} width={800} alt="Recherche Futée page demandes" className="rounded-lg" /> */}
                     </div>
                 }
             />
@@ -38,7 +50,7 @@ export default function RechercheFutee() {
                     <div>
                         <ul className="list-disc ml-4">
                             <li>
-                                MySQL
+                                MySQL via Doctrine
                                 <ul className="list-disc ml-4">
                                     <li>Base de données</li>
                                 </ul>
@@ -50,7 +62,7 @@ export default function RechercheFutee() {
                                 </ul>
                             </li>
                             <li>
-                                PHP
+                                PHP avec Symfony
                                 <ul className="list-disc ml-4">
                                     <li>Partie backend du site</li>
                                 </ul>

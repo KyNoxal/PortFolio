@@ -7,7 +7,7 @@ type YellowButtonProps = {
   href?: string;
 }
 
-export function YellowButton({ text, className, href }: YellowButtonProps) {
+export default function YellowButton({ text, className, href }: YellowButtonProps) {
   return <Link href={href?? "#"}>
         <button className={`bg-yellow text-gray-900 hover:bg-yellowhover shadow-lg hover:scale-110 hover:ease-in-out duration-200 ${className}`} >
             {text}

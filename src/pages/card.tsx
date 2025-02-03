@@ -1,5 +1,5 @@
-import { GrayButton } from "./gray-button";
 import { ReactNode } from "react";
+import GrayButton from "./gray-button";
 
 type CardProps = {
   upperText?: string,
