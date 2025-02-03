@@ -27,8 +27,8 @@ export default function RechercheFutee() {
                 title="Visuels"
                 nodes={
                     <div className="flex flex-col justify-center my-5 space-y-5">
-                        <Image src={"./Recherche Futée page principale.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg"/>
-                        <Image src={"./Recherche Futée page demandes.png"} height={800} width={800} alt="Recherche Futée page demandes" className="rounded-lg"/>   
+                        <Image src={"../Recherche Futée page principale.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg"/>
+                        <Image src={"../Recherche Futée page demandes.png"} height={800} width={800} alt="Recherche Futée page demandes" className="rounded-lg"/>   
                     </div>
                 }
             />
