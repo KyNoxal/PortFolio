@@ -1,7 +1,12 @@
 import Card from "../card";
 import Header from "../header";
 import BackButton from "../back-button";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import nectsEnigmaMainScreenImg from "/public/images/Nect's enigma main screen.png";
+import nectsEnigmaInGameScreenImg from "/public/images/Nect's enigma in game screen.png";
+import nectsEnigmaCharacterSelection from "/public/images/Nect's enigma character selection.png";
+
+
 
 export default function Accueil() {
     return (
@@ -12,10 +17,10 @@ export default function Accueil() {
                 title="Présentation"
                 nodes={
                     <div>
-                        <p>Next&apos;s Enigma est un jeu de puzzle intégralement jouable sur un navigateur web.
+                        <p>Nect&apos;s Enigma est un jeu de puzzle intégralement jouable sur un navigateur web.
                         Il s&apos;inspire de l’univers de science-fiction des jeux vidéos “Portal” et “Portal 2” développés par Valve.</p>
                         <br></br>
-                        <p>Dans Next&apos;s Enigma, vous devez résoudre des puzzles pour rejoindre la sortie de la salle et progresser dans le jeu.
+                        <p>Dans Nect&apos;s Enigma, vous devez résoudre des puzzles pour rejoindre la sortie de la salle et progresser dans le jeu.
                         Des niveaux de tutoriels avec une difficulté progressives sont proposés. Cependant, l&apos;utilisateur peut importer son propre niveau depuis son appareil</p>
                     </div>
                 }
@@ -24,9 +29,9 @@ export default function Accueil() {
                 title="Visuels"
                 nodes={
                     <div className="flex flex-col justify-center my-5 space-y-5">
-                        <Image src={"../Nect's enigma main screen.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg"/>
-                        <Image src={"../Nect's enigma in game screen.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg"/>   
-                        <Image src={"../Nect's enigma character selection.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg"/>   
+                        <ExportedImage src={nectsEnigmaMainScreenImg} height={800} width={800} alt="Nect's Enigma menu principale" className="rounded-lg" />
+                        <ExportedImage src={nectsEnigmaInGameScreenImg} height={800} width={800} alt="Nect's Enigma écran en jeu" className="rounded-lg" />
+                        <ExportedImage src={nectsEnigmaCharacterSelection} height={800} width={800} alt="Nect's Enigma sélection du personnage" className="rounded-lg" />
                     </div>
                 }
             />

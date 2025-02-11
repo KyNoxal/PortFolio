@@ -18,7 +18,7 @@ export default function Accueil() {
 				nodes={
 					<ul className="list-disc ml-4">
 						<li>DUT Informatique à l&apos;IUT de Dijon - Auxerre - Nevers</li>
-						<li>BAC STI2D Mention Assez bien au Lycée Général et technologique Geoffroy Saint Hilaire</li>
+						<li>BAC STI2D Mention bien au Lycée Général et technologique Geoffroy Saint Hilaire</li>
 					</ul>
 				}
 				href="/mes-diplomes"

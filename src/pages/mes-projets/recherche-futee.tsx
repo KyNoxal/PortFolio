@@ -1,7 +1,9 @@
 import Card from "../card";
 import Header from "../header";
 import BackButton from "../back-button";
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import RechercheFuteeMainPage from "/public/images/Recherche Futée page principale.png";
+import RechercheFuteeDemandesPage from "/public/images/Recherche Futée page demandes.png";
 
 export default function RechercheFutee() {
     return (
@@ -27,8 +29,8 @@ export default function RechercheFutee() {
                 title="Visuels"
                 nodes={
                     <div className="flex flex-col justify-center my-5 space-y-5">
-                        <Image src={"../Recherche Futée page principale.png"} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg"/>
-                        <Image src={"../Recherche Futée page demandes.png"} height={800} width={800} alt="Recherche Futée page demandes" className="rounded-lg"/>   
+                        <ExportedImage src={RechercheFuteeMainPage} height={800} width={800} alt="Recherche Futée page principale" className="rounded-lg" />;
+                        <ExportedImage src={RechercheFuteeDemandesPage} height={800} width={800} alt="Recherche Futée page demandes" className="rounded-lg" />;
                     </div>
                 }
             />
