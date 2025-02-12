@@ -1,39 +1,72 @@
 import { ReactNode } from "react";
 import GrayButton from "./gray-button";
+import { StaticImageData } from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+import Link from "next/link";
+
+type ImageData = {
+  src: StaticImageData;
+  alt: string;
+  text: string;
+  imgHref?: string;
+};
 
 type CardProps = {
-  upperText?: string,
-  title: string,
-  nodes: ReactNode,
-  href?: string,
-}
+  upperText?: string;
+  title: string;
+  nodes: ReactNode;
+  href?: string;
+  images?: ImageData[];
+};
 
-export default function Card({ upperText, title, nodes, href }: CardProps) {
-  if (href?.length && href?.length > 0) {
+export default function Card({
+  upperText,
+  title,
+  nodes,
+  href,
+  images,
+}: CardProps) {
+    return (
+      <div className="h-fit">
+        <div className="mx-0 text-lg text-black">{upperText}</div>
+        <div className="mb-4 mx-3 h-fit px-3 py-2 rounded-md bg-gray-50 text-black">
+          <h1 className="text-2xl font-jaro font-bold">{title}</h1>
+          <div className="flex justify-between">
+            <div className="m-3">{nodes}</div>
 
-    return <>
-      <div className="mt-4 mx-5 text-lg text-black">
-        {upperText}
-      </div>
-      <div className="mb-4 mx-3 h-fit px-3 py-2 rounded-md bg-gray-50 text-black">
-        <h1 className="text-2xl font-jaro font-bold">{title}</h1>
-        <div className="m-3">{nodes}</div>
-
-
-        <div className="flex justify-end m-2">
-          <GrayButton text="En savoir plus" className="h-auto py-2 px-2.5 text-md mx-auto rounded-md my-2 justify-end" href={href} />
+            <div className="relative bottom-4 grid grid-cols-3 w-5/12 mr-4 justify-between">
+              {images &&
+                images.map((image, index) => (
+                  <div
+                    key={index}
+                    className="w-fit p-2 mb-2 rounded-md hover:shadow-xl transition-shadow"
+                  >
+                    <Link href={image.imgHref ?? "#"}>
+                      <ExportedImage
+                        src={image.src}
+                        height={400}
+                        alt="Nect's Enigma menu principale"
+                        className="w-fit h-24 rounded-md mr-2"
+                      />
+                      <span className="text-gray-700 w-10 text-center justify-self-center">
+                        {image.text}
+                      </span>
+                    </Link>
+                  </div>
+                ))}
+            </div>
+          </div>
+          <div className="flex justify-end m-2">
+            {href?.length && href?.length > 0 ? (
+              <GrayButton
+                text="En savoir plus"
+                className="relative bottom-3 h-auto py-2 px-2.5 text-md mx-auto rounded-md my-2 justify-end"
+                href={href}
+              />
+            ) : null}
+            
+          </div>
         </div>
       </div>
-    </>;
-  } else {
-    return <>
-      <div className="mt-4 mx-5 text-lg text-black">
-        {upperText}
-      </div>
-      <div className="mb-4 mx-3 h-fit px-3 py-2 rounded-md bg-gray-50 text-black">
-        <h1 className="text-2xl font-jaro font-bold">{title}</h1>
-        <div className="m-3">{nodes}</div>
-      </div>
-    </>;
-  }
+    );
 }
