@@ -37,18 +37,21 @@ export default function Accueil() {
             alt: "Logo de Recherche Futée",
             text: "Recherche Futée",
             imgHref: "/mes-projets/recherche-futee",
+            size: 100,
           },
           {
             src: nectsEnigmaInGameScreenImg,
-            alt: "Image 2",
+            alt: "Page de jeu de Nect's Enigma",
             text: "Nect's Enigma",
             imgHref: "/mes-projets/nect-enigma",
+            size: 300,
           },
           {
             src: MerchVentoryLogo,
             alt: "Logo de Merchventory",
             text: "MerchVentory",
             imgHref: "/mes-projets/MerchVentory",
+            size: 500,
           },
         ]}
       />

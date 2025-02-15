@@ -1,6 +1,8 @@
 import Card from "./card";
 import Header from "./header";
 import BackButton from "./back-button";
+import GRLogo from "/public/images/GRLogo.jpg";
+import ApyclicLogo from "/public/images/ApyclicLogo.jpg";
 
 export default function MonParcours() {
     return (
@@ -29,7 +31,13 @@ export default function MonParcours() {
                         <li>Maintien en condition opérationnel du SID</li>
                     </ul>
                 }
-            />
+                images={[
+                    {
+                      src: GRLogo,
+                      alt: "Logo de Gustave Roussy",
+                      text: "",
+                      imgHref: "https://www.gustaveroussy.fr",
+                      size: 350}]}/>
             <Card
                 upperText="De Janvier 2024 à Mars 2024"
                 title="Stage en développement logiciel à Apyclic (Nevers - Nièvre)"
@@ -56,6 +64,13 @@ export default function MonParcours() {
                         </li>
                     </ul>
                 }
+                images={[
+                    {
+                      src: ApyclicLogo,
+                      alt: "Logo d'Apyclic",
+                      text: "",
+                      imgHref: "https://www.apyclic.fr",
+                      size: 200}]}
             />
             <Card
                 upperText="De Juillet 2024 à Août 2024, de juillet 2023 à Août 2023, de juillet 2022 à Août 2022"
