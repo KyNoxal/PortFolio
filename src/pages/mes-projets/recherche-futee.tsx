@@ -1,7 +1,6 @@
 import Card from "../card";
 import Header from "../header";
 import BackButton from "../back-button";
-import ExportedImage from "next-image-export-optimizer";
 import RechercheFuteeMainPage from "/public/images/Recherche Futée page principale.png";
 import RechercheFuteeDemandesPage from "/public/images/Recherche Futée page demandes.png";
 
@@ -37,26 +36,19 @@ export default function RechercheFutee() {
       />
       <Card
         title="Visuels"
-        nodes={
-          <div className="flex flex-col justify-center my-5 space-y-5">
-            <ExportedImage
-              src={RechercheFuteeMainPage}
-              height={800}
-              width={800}
-              alt="Recherche Futée page principale"
-              className="rounded-lg"
-            />
-            ;
-            <ExportedImage
-              src={RechercheFuteeDemandesPage}
-              height={800}
-              width={800}
-              alt="Recherche Futée page demandes"
-              className="rounded-lg"
-            />
-            ;
-          </div>
-        }
+        images={[
+          {
+            src: RechercheFuteeMainPage,
+            alt: "Recherche Futée page principale",
+            text: "Recherche Futée page principale",
+          },
+          {
+            src: RechercheFuteeDemandesPage,
+            alt: "Recherche Futée page demandes",
+            text: "Recherche Futée page demandes",
+          },
+        ]}
+        imagesCenter={true}
       />
       <Card
         title="Technologies utilisées"

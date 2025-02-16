@@ -3,6 +3,7 @@ import Header from "./header";
 import BackButton from "./back-button";
 import nectsEnigmaInGameScreenImg from "/public/images/Nect's enigma in game screen.png";
 import RechercheFuteeMainPage from "/public/images/Recherche Futée page principale.png";
+import merchVentoryMainPage from "/public/images/MechVentoryMainPage.png";
 
 export default function MesProjets() {
   return (
@@ -23,7 +24,7 @@ export default function MesProjets() {
         images={[
           {
             src: nectsEnigmaInGameScreenImg,
-            alt: "Logo de Merchventory",
+            alt: "Nect's Enigma écran en jeu",
             text: "Nect's Enigma écran en jeu",
             imgHref: "/mes-projets/nect-enigma",
           },
@@ -50,6 +51,30 @@ export default function MesProjets() {
             alt: "Logo de Recherche Futée",
             text: "Recherche Futée page principale",
             imgHref: "/mes-projets/recherche-futee",
+          },
+        ]}
+      />
+
+      <Card
+        title="MerchVentory"
+        nodes={
+          <div>
+            <ul className="list-disc ml-4">
+              <li>
+                Application de pré-commande et gestion de stock pour les groupes
+                de musique.
+              </li>
+            </ul>
+            <div className="flex flex-row justify-center my-5"></div>
+          </div>
+        }
+        href="/mes-projets/merchventory"
+        images={[
+          {
+            src: merchVentoryMainPage,
+            alt: "MerchVentory page principale",
+            text: "MerchVentory page principale",
+            imgHref: "/mes-projets/merchventory",
           },
         ]}
       />

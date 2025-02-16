@@ -91,7 +91,7 @@ export default function MonParcours() {
         ]}
       />
       <Card
-        upperText="De Juillet 2024 à Août 2024, de juillet 2023 à Août 2023, de juillet 2022 à Août 2022"
+        upperText="Eté 2024, été 2023, été 2022"
         title="Jobs d'été"
         nodes={
           <ul className="list-disc ml-4">
@@ -107,7 +107,7 @@ export default function MonParcours() {
         }
       />
       <Card
-        upperText="De Juillet 2018 à Août 2018"
+        upperText="Eté 2018"
         title="Job d'été"
         nodes={
           <ul className="list-disc ml-4">

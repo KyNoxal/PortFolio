@@ -1,7 +1,6 @@
 import Card from "../card";
 import Header from "../header";
 import BackButton from "../back-button";
-import ExportedImage from "next-image-export-optimizer";
 import nectsEnigmaMainScreenImg from "/public/images/Nect's enigma main screen.png";
 import nectsEnigmaInGameScreenImg from "/public/images/Nect's enigma in game screen.png";
 import nectsEnigmaCharacterSelection from "/public/images/Nect's enigma character selection.png";
@@ -34,31 +33,24 @@ export default function Accueil() {
       />
       <Card
         title="Visuels"
-        nodes={
-          <div className="flex flex-col justify-center my-5 space-y-5">
-            <ExportedImage
-              src={nectsEnigmaMainScreenImg}
-              height={800}
-              width={800}
-              alt="Nect's Enigma menu principale"
-              className="rounded-lg"
-            />
-            <ExportedImage
-              src={nectsEnigmaInGameScreenImg}
-              height={800}
-              width={800}
-              alt="Nect's Enigma écran en jeu"
-              className="rounded-lg"
-            />
-            <ExportedImage
-              src={nectsEnigmaCharacterSelection}
-              height={800}
-              width={800}
-              alt="Nect's Enigma sélection du personnage"
-              className="rounded-lg"
-            />
-          </div>
-        }
+        images={[
+          {
+            src: nectsEnigmaMainScreenImg,
+            alt: "Nect's Enigma menu principale",
+            text: "Nect's Enigma menu principale",
+          },
+          {
+            src: nectsEnigmaInGameScreenImg,
+            alt: "Nect's Enigma écran en jeu",
+            text: "Nect's Enigma écran en jeu",
+          },
+          {
+            src: nectsEnigmaCharacterSelection,
+            alt: "Nect's Enigma sélection du personnage",
+            text: "Nect's Enigma sélection du personnage",
+          },
+        ]}
+        imagesCenter={true}
       />
       <Card
         title="Technologies utilisées"

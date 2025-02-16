@@ -11,24 +11,35 @@ export default function Accueil() {
       <Card
         title="Mes projets et réalisations :"
         nodes={
-          <ul className="list-disc ml-4">
-            <li>
-              Création d&apos;un logiciel Windows de gestion de composants
-              électroniques
-            </li>
-            <li>
-              Création d&apos;une IA capable de jouer aux dames et aux morpions
-            </li>
-            <li>Développement d&apos;un jeu de puzzle en JavaScript</li>
-            <li>
-              Développement de logiciels de gestion de composants
-              d&apos;informatique
-            </li>
-            <li>
-              Développement d&apos;un logiciel de statistique de fréquentation
-              d&apos;un point de vente
-            </li>
-          </ul>
+          <div>
+            <p>
+              À travers mes projets, je vise à concevoir des outils performants
+              et intuitifs, qu’il s’agisse de logiciels ou
+              <br />
+              d’interfaces web, en mettant l’accent sur la qualité du code,
+              l’accessibilité et l’expérience utilisateur.
+            </p>
+            <br></br>
+            <ul className="list-disc ml-4">
+              <li>
+                Création d&apos;un logiciel Windows de gestion de composants
+                électroniques
+              </li>
+              <li>
+                Création d&apos;une IA capable de jouer aux dames et aux
+                morpions
+              </li>
+              <li>Développement d&apos;un jeu de puzzle en JavaScript</li>
+              <li>
+                Développement de logiciels de gestion de composants
+                d&apos;informatique
+              </li>
+              <li>
+                Développement d&apos;un logiciel de statistique de fréquentation
+                d&apos;un point de vente
+              </li>
+            </ul>
+          </div>
         }
         href="mes-projets"
         images={[
@@ -50,7 +61,7 @@ export default function Accueil() {
             src: MerchVentoryLogo,
             alt: "Logo de Merchventory",
             text: "MerchVentory",
-            imgHref: "/mes-projets/MerchVentory",
+            imgHref: "/mes-projets/merchventory",
             size: 500,
           },
         ]}
@@ -95,11 +106,13 @@ export default function Accueil() {
         <Card
           title="Mes ambitions :"
           nodes={
-            <ul className="list-disc ml-4">
-              <li>Faire de mes passions mon travail</li>
-              <li>Obtenir un Master en développement web</li>
-              <li>Proposer des outils (logiciels, algorithmes) de qualité</li>
-            </ul>
+            <p>
+              Je souhaite transformer mes passions pour l’informatique et le
+              développement en une carrière enrichissante. Mon objectif est
+              d’obtenir un Master en développement web afin de renforcer mes
+              compétences et d’explorer des domaines tels que l’intelligence
+              artificielle et l’optimisation des algorithmes.
+            </p>
           }
         />
       </div>

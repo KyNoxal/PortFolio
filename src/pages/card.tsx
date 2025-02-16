@@ -15,9 +15,10 @@ type ImageData = {
 type CardProps = {
   upperText?: string;
   title: string;
-  nodes: ReactNode;
+  nodes?: ReactNode;
   href?: string;
   images?: ImageData[];
+  imagesCenter?: boolean;
 };
 
 export default function Card({
@@ -26,21 +27,26 @@ export default function Card({
   nodes,
   href,
   images,
+  imagesCenter = false,
 }: CardProps) {
   return (
     <div className="h-fit">
       <div className="ml-3 mx-0 text-lg text-black">{upperText}</div>
       <div className="mb-4 mx-3 h-fit px-3 py-2 rounded-md bg-gray-50 text-black">
         <h1 className="text-2xl font-jaro font-bold">{title}</h1>
-        <div className="flex justify-between">
+        <div
+          className={` ${!imagesCenter ? "block sm:flex justify-between" : "flex-col"}`}
+        >
           <div className="m-3">{nodes}</div>
 
-          <div className="relative bottom-4 gap-2 grid-cols-3 w-5/12 mr-4 justify-between hidden md:flex">
+          <div
+            className={`relative bottom-4 gap-2 grid-cols-3 ${!imagesCenter ? "" : "w-full"} sm:justify-center items-center mr-4 sm:flex`}
+          >
             {images &&
               images.map((image, index) => (
                 <div
                   key={index}
-                  className="w-fit p-2 mb-2 rounded-md hover:shadow-xl transition-shadow"
+                  className={`p-2 mb-2 rounded-md hover:shadow-xl transition-shadow`}
                 >
                   <Link href={image.imgHref ?? "#"}>
                     <ExportedImage
