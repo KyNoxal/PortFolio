@@ -19,12 +19,12 @@ export default {
         wheat: "#D9D9D9",
         blue: "#07399D",
         graybutton: "#C1CFDA",
-        graybuttonhover: "#939EA6"
+        graybuttonhover: "#939EA6",
       },
       fontFamily: {
-        actor: ['Actor', 'system-ui'],
-        jaro: ['Jaro', 'system-ui']
-      }
+        actor: ["Actor", "system-ui"],
+        jaro: ["Jaro", "system-ui"],
+      },
     },
   },
   plugins: [],

@@ -49,7 +49,9 @@ export default function MesProjets() {
             src: RechercheFuteeMainPage,
             alt: "Logo de Recherche Futée",
             text: "Recherche Futée page principale",
-            imgHref: "/mes-projets/recherche-futee",}]}
+            imgHref: "/mes-projets/recherche-futee",
+          },
+        ]}
       />
 
       <Card

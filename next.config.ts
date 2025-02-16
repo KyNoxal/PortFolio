@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
-const isProduction = process.env.NODE_ENV === 'production';
-
+const isProduction = process.env.NODE_ENV === "production";
 
 const nextConfig: NextConfig = {
   /* config options here */
   reactStrictMode: true,
-  output: 'export',
+  output: "export",
   images: {
     loader: "custom",
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
@@ -23,8 +22,8 @@ const nextConfig: NextConfig = {
     nextImageExportOptimizer_remoteImageCacheTTL: "0",
   },
   trailingSlash: true,
-  assetPrefix: isProduction ? '/portfolio' : '',
-  basePath: isProduction ? '/portfolio' : '',
+  assetPrefix: isProduction ? "/portfolio" : "",
+  basePath: isProduction ? "/portfolio" : "",
 };
 
 export default nextConfig;
