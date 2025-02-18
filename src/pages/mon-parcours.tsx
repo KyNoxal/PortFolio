@@ -90,36 +90,39 @@ export default function MonParcours() {
           },
         ]}
       />
-      <Card
-        upperText="Eté 2024, été 2023, été 2022"
-        title="Jobs d'été"
-        nodes={
-          <ul className="list-disc ml-4">
-            <li>
-              Employé commerciale dans une chaîne de magasin agroalimentaire
-              (Leclerc)
-              <ul className="list-disc ml-4">
-                <li>Remplacement de personnels</li>
-                <li>Maintiens du rayons frais</li>
-              </ul>
-            </li>
-          </ul>
-        }
-      />
-      <Card
-        upperText="Eté 2018"
-        title="Job d'été"
-        nodes={
-          <ul className="list-disc ml-4">
-            <li>
-              Ouvrier sur machine dans une coopérative agricole local.
-              <ul className="list-disc ml-4">
-                <li>Renforcement des équipes</li>
-              </ul>
-            </li>
-          </ul>
-        }
-      />
+      <div className="grid grid-cols-1 gap-0 md:grid-cols-2 w-full mx-auto">
+        <Card
+          upperText="Eté 2024, été 2023, été 2022"
+          title="Jobs d'été"
+          nodes={
+            <ul className="list-disc ml-4">
+              <li>
+                Employé commerciale dans une chaîne de magasin agroalimentaire
+                (Leclerc)
+                <ul className="list-disc ml-4">
+                  <li>Remplacement de personnels</li>
+                  <li>Maintiens du rayons frais</li>
+                </ul>
+              </li>
+            </ul>
+          }
+        />
+        <Card
+          upperText="Eté 2018"
+          title="Job d'été"
+          nodes={
+            <ul className="list-disc ml-4">
+              <li>
+                Ouvrier sur machine dans une coopérative agricole local.
+                <ul className="list-disc ml-4">
+                  <li>Remplacement de personnels</li>
+                  <li>Renforcement des équipes</li>
+                </ul>
+              </li>
+            </ul>
+          }
+        />
+      </div>
     </main>
   );
 }

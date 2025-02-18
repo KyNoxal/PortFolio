@@ -35,18 +35,18 @@ export default function Card({
       <div className="mb-4 mx-3 h-fit px-3 py-2 rounded-md bg-gray-50 text-black">
         <h1 className="text-2xl font-jaro font-bold">{title}</h1>
         <div
-          className={` ${!imagesCenter ? "block sm:flex justify-between" : "flex-col"}`}
+          className={` ${!imagesCenter ? "block lg:flex justify-between" : "flex-col"}`}
         >
           <div className="m-3">{nodes}</div>
 
           <div
-            className={`relative bottom-4 gap-2 grid-cols-3 ${!imagesCenter ? "" : "w-full"} sm:justify-center items-center mr-4 sm:flex`}
+            className={`relative bottom-4 gap-2 grid-cols-3 ${!imagesCenter ? "" : "w-full"} justify-center items-center mr-4 flex`}
           >
             {images &&
               images.map((image, index) => (
                 <div
                   key={index}
-                  className={`p-2 mb-2 rounded-md hover:shadow-xl transition-shadow`}
+                  className={`p-2 mb-2 rounded-md shadow-xl hover:shadow-2xl hover:scale-105 transition-all`}
                 >
                   <Link href={image.imgHref ?? "#"}>
                     <ExportedImage

@@ -1,8 +1,8 @@
 import Card from "./card";
 import Header from "./header";
 import RechercheFuteeLogo from "/public/images/SF_RF.png";
-import nectsEnigmaInGameScreenImg from "/public/images/Nect's enigma in game screen.png";
-import MerchVentoryLogo from "/public/images/MerchVentoryLogo.svg";
+import nectsEnigmaLogo from "/public/images/Nect'sEnigmaIcon.png";
+import MerchVentoryLogo from "/public/images/MerchVentoryLogo.png";
 
 export default function Accueil() {
   return (
@@ -22,27 +22,25 @@ export default function Accueil() {
             <br></br>
             <ul className="list-disc ml-4">
               <li>
-                Création d&apos;un logiciel Windows de gestion de composants
-                électroniques
+                MerchVentory : Application de précommande et gestion de stocks
               </li>
               <li>
-                Création d&apos;une IA capable de jouer aux dames et aux
-                morpions
+                RechercheFutee : Application d&apos;organisation de recherche de
+                stage et alternance
               </li>
-              <li>Développement d&apos;un jeu de puzzle en JavaScript</li>
-              <li>
-                Développement de logiciels de gestion de composants
-                d&apos;informatique
-              </li>
-              <li>
-                Développement d&apos;un logiciel de statistique de fréquentation
-                d&apos;un point de vente
-              </li>
+              <li>Nect&apos;s Enigma : Jeu de puzzle 2D</li>
             </ul>
+            <br />
           </div>
         }
-        href="mes-projets"
         images={[
+          {
+            src: MerchVentoryLogo,
+            alt: "Logo de Merchventory",
+            text: "MerchVentory",
+            imgHref: "/mes-projets/merchventory",
+            size: 100,
+          },
           {
             src: RechercheFuteeLogo,
             alt: "Logo de Recherche Futée",
@@ -51,18 +49,11 @@ export default function Accueil() {
             size: 100,
           },
           {
-            src: nectsEnigmaInGameScreenImg,
+            src: nectsEnigmaLogo,
             alt: "Page de jeu de Nect's Enigma",
             text: "Nect's Enigma",
             imgHref: "/mes-projets/nect-enigma",
-            size: 300,
-          },
-          {
-            src: MerchVentoryLogo,
-            alt: "Logo de Merchventory",
-            text: "MerchVentory",
-            imgHref: "/mes-projets/merchventory",
-            size: 500,
+            size: 100,
           },
         ]}
       />
