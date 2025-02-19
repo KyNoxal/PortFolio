@@ -24,6 +24,7 @@ export default function Header() {
       <YellowButton
         text="Voir mon CV"
         className="h-auto py-2 px-2.5 text-md mx-auto rounded-md"
+        href="https://1drv.ms/f/c/89e9fdb9008639a5/EqF7t5sxJfpIhlv3ian-O-kBhZ0s_y0TCsElEhO2U1QXyQ?e=UiKvUT"
       />
     </div>
   );
